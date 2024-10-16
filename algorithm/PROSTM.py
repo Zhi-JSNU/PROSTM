@@ -4,7 +4,7 @@
 import torch
 
 
-class ITSNetwork:
+class PROSTMNetwork:
     # Need Set
     T: int = None
     theta1: float = None  # θ_1 represents the probability that NIU is affected by EIU

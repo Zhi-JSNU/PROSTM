@@ -18,7 +18,7 @@ class PROSTMNetwork:
     gama: float = None
 
     pNIU, pEIU, pNMSP, pEMSP, pNAMS, pEAMS = None, None, None, None, None, None
-    N: torch.Tensor = None  # ITS Network Matrix
+    N: torch.Tensor = None  # PROSTM Network Matrix
     LA = None
     LB = None
     X: float = None  # Probabilities related to dynamic deployment participation and exit mechanisms
@@ -138,7 +138,7 @@ class PROSTMNetwork:
         else:
             print("Invalid matrix type. Choose 'LA' or 'LB'.")
 
-    def ITSNetwork_Connection_matrices(self):
+    def PROSTMNetwork_Connection_matrices(self):
         """Print the current state of matrices."""
         print("Adjacency Matrix LA:")
         print(self.LA)

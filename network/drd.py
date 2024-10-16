@@ -3,7 +3,7 @@
 
 import asyncio
 import socket
-from algorithm.itsmodel import ITSNetwork
+from algorithm.PROSTM import PROSTMNetwork
 from utils.tools import splitData
 from utils import monitor
 import logging

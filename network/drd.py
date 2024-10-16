@@ -3,7 +3,7 @@
 
 import asyncio
 import socket
-from algorithm.itsmodel import ITSNetwork
+from algorithm.PROSTM import PROSTMNetwork
 from utils.tools import splitData
 from utils import monitor
 import logging
@@ -374,7 +374,7 @@ class DRDWM(drdbase):
         super().__init__(ip, port)
         self.N = N
         self.T = T
-        self.Model = ITSNetwork(N, T)
+        self.Model = PROSTMNetwork(N, T)
 
     def setBasicVar(self, theta1, theta2, theta3, theta4, delta, k, u, v, X, Y):
         self.Model.setTheta(theta1, theta2, theta3, theta4)
